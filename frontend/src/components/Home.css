@@ -1,0 +1,40 @@
+/* Slider container styles */
+.slider-container {
+    max-width: 98%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    /* height: 83vh; */
+  }
+  
+  /* Make images responsive */
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  
+  /* Overlay container */
+ 
+  
+  /* Position dots on the image */
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20; /* Ensure dots appear above images but below the text */
+  }
+  
+  /* Style dots */
+  .slick-dots li button:before {
+    color: white;
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #f39c12;
+  }
+  

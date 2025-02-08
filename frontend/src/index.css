@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: poppins,sans-serif;
+}
+
+/* navbar css started */
+
+
+nav {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: flex;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 66;
+  top: 100%;
+  left: -40px;
+  /* right: 20px; */
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding:  10px 20px;
+  list-style: none;
+}
+
+.dropdown li {
+  padding: 5px 0;
+}
+
+.dropdown a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+li:hover .dropdown {
+  display: block;
+  
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Hidden checkbox for toggling */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 33;
+    top: 120px;
+    right: 10px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+aa{
+  position: relative;
+}
+
+/* navbar css ended */
+
+
+
+
+/* cart counting css startd */
+
+
+
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-cart-shopping {
+  font-size: 24px; /* Adjust this to the size you want for the cart icon */
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -9px;
+  right: -16px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-weight: bold;
+  font-size: 12px;
+  min-width: 20px;
+  text-align: center;
+}
+
+
+
+/* cart counting css ended */
+
+
+/* confirm button css started */
+
+
+/* Add this to your CSS */
+.confirm {
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.confirm:hover {
+  transform: scale(1.1); /* Increases size by 10% */
+  animation: shake 0.5s ease-in-out; /* Shake animation */
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+/* confirm button css ended */
+
+
+
+@media (max-width: 500px) {
+  .grandtotal {
+    flex-direction: column;
+    
+  }
+.confirm{
+
+padding: 10px;
+margin-top: 10px;
+margin-left: 80px;
+
+}
+
+
+}
+
+
+
+
+@media (max-width: 779px) {
+  footer {
+    flex-direction: column;
+  }}
+
+
+
+
+@media (max-width: 779px) {
+  .custom-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }}
+
+  @media (max-width: 464px) {
+    .welcome-offer {
+      font-size: 10px;
+      
+    }}
+
+   @media(max-width:1384px){
+    .shopping{
+      width: 97%;
+      height: 200px;
+    }
+   }
+  
+    
+@media (max-width: 320px) {
+  .form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.input{
+ padding: 8px;
+ margin-left: -34px;
+}
+.label{
+  padding: 6px 0px 6px 0px;
+  margin-left: -20px;
+}
+}
+
+@media (max-width: 380px) {
+  .form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }}
+
+
+  @media(max-width:630px){
+    .scroll-to-top{
+      margin-right: -8px;
+    }
+  }
