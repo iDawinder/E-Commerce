@@ -42,8 +42,8 @@ A modern e-commerce platform built with React and Node.js, featuring a responsiv
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd quick-cart
+git clone https://github.com/iDawinder/E-Commerce.git
+cd E-Commerce
 ```
 
 2. Frontend Setup
@@ -75,7 +75,7 @@ JWT_SECRET=your_jwt_secret
 ## 🏗️ Project Structure
 
 ```
-quick-cart/
+E-Commerce/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
