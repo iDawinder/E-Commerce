@@ -57,9 +57,6 @@ const Products = () => {
         </button>
       </div>
 
-
-
-
       <div className="tw-flex tw-flex-wrap container tw-mx-auto tw-py-10">
         {filteredData.map((item) => (
           <Oneproduct data={item} key={item.id} />
